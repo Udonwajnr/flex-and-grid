@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Open+Sans:wght@300;400;500&display=swap');
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+    --paragraph:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:hsl(0, 0%, 95%);
+    --font-size:15px;
+    --font-weight:400;
+    --font-weight-bold:700;
+    --big-shoulder-display:'Big Shoulders Display', cursive; 
+    --lexend-deca:'Lexend Deca', sans-serif ;
+}
+
+
+
+/* universal tags */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+    font-family: var(--big-shoulder-display);
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--lexend-deca);
+    font-size: var(--font-size);
+}
+
+/* universal tags ending */
+header{
+    background-color:black ;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+
+}
+.navbar ul li{
+    padding: 10px;
+    margin: 0px 10px;
+}
+.navbar ul li a{
+    color: #fff;
+}
+/* cards */
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+.first-card{
+    background-color: var(--bright-orange);
+    width: 290px;
+    height:420px ;
+    padding: 40px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right:40px;
+}
+.card-top-icon{
+    text-align: left;
+    }
+.card-header{
+    text-align:left;
+    margin-top: 20px;
+}
+.card-header h2{
+    color: var(--very-light-gray);
+    font-size: 30px;
+    margin-top: 15px;
+
+}
+
+.card-body{
+    color: var(--paragraph);
+    margin-top: 20px;
+}
+.card-body {
+        line-height: 1.4;
+}
+
+/*  */
+.card-btn{
+    margin-top: 65px;
+    padding:15px 0px;
+    
+}
+.first-card .card-btn a{
+    background-color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
+    color:var(--bright-orange);
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s;
+}
+.first-card .card-btn a:hover{
+    background-color: transparent;
+    color: var(--very-light-gray);
+    transition: .3s ;
+}
+
+
+.second-card{
+    background-color: var(--dark-cyan);
+    width: 290px;
+    height: 420px;
+    padding: 40px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.third-card{
+    background-color: var(--very-dark-cyan);
+    width: 290px;
+    height: 420px;
+    padding: 40px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+.second-card .card-btn a{
+        background-color: var(--very-light-gray);
+        border: 1px solid var(--very-light-gray);
+        color: var(--dark-cyan);
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: .3s;
+}
+
+.third-card .card-btn a{
+        background-color: var(--very-light-gray);
+        border: 1px solid var(--very-light-gray);
+        color: var(--very-dark-cyan);
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: .3s;
+}
+
+.second-card .card-btn a:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    transition: .3s;
+}
+
+.third-card .card-btn a:hover{
+        background-color:transparent;
+        color: var(--very-light-gray);
+        transition: .3s;
+}
+
+/* cards-ending */
